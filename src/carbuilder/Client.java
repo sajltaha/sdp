@@ -12,11 +12,11 @@ public class Client {
         Builder carBuilder = new CarBuilder();
         director.makeSportsCar(carBuilder);
         Car sportsCar = (Car) carBuilder.getResult();
-        System.out.println("Sports Car: " + sportsCar);
+        System.out.println("Sport Car: " + sportsCar);
 
         Builder carBuilder2 = new CarBuilder();
         director.makeStandardCar(carBuilder2);
-        Car suvCar = (Car) carBuilder2.getResult();
-        System.out.println("SUV Car: " + suvCar);
+        Car standardCar = (Car) carBuilder2.getResult();
+        System.out.println("Standard Car: " + standardCar);
     }
 }
