@@ -1,23 +1,23 @@
 package lms.FactoryMethod;
 
-import lms.FactoryMethod.creators.AssignmentICreator;
-import lms.FactoryMethod.creators.QuizICreator;
-import lms.FactoryMethod.creators.VideoICreator;
+import lms.FactoryMethod.creators.AssignmentCreator;
+import lms.FactoryMethod.creators.QuizCreator;
+import lms.FactoryMethod.creators.VideoCreator;
 import lms.FactoryMethod.interfaces.ICreator;
 import lms.FactoryMethod.interfaces.IProduct;
 
 public class Client {
     public static void main(String[] args) {
-        ICreator quizICreator = new QuizICreator();
-        IProduct quiz = quizICreator.createProduct();
+        ICreator quizCreator = new QuizCreator();
+        IProduct quiz = quizCreator.createProduct();
         quiz.display();
 
-        ICreator videoICreator = new VideoICreator();
-        IProduct video = videoICreator.createProduct();
+        ICreator videoCreator = new VideoCreator();
+        IProduct video = videoCreator.createProduct();
         video.display();
 
-        ICreator assignmentICreator = new AssignmentICreator();
-        IProduct assignment = assignmentICreator.createProduct();
+        ICreator assignmentCreator = new AssignmentCreator();
+        IProduct assignment = assignmentCreator.createProduct();
         assignment.display();
     }
 }

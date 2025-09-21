@@ -4,7 +4,7 @@ import lms.FactoryMethod.interfaces.ICreator;
 import lms.FactoryMethod.interfaces.IProduct;
 import lms.FactoryMethod.products.Assignment;
 
-public class AssignmentICreator implements ICreator {
+public class AssignmentCreator implements ICreator {
     @Override
     public IProduct createProduct() {
         return new Assignment();
