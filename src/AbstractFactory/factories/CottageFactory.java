@@ -1,17 +1,17 @@
 package AbstractFactory.factories;
 
 import AbstractFactory.SmartHomeFactory;
-import AbstractFactory.interfaces.ClimateSystem;
-import AbstractFactory.interfaces.LightingSystem;
-import AbstractFactory.interfaces.SecuritySystem;
+import AbstractFactory.interfaces.IClimateSystem;
+import AbstractFactory.interfaces.ILightingSystem;
+import AbstractFactory.interfaces.ISecuritySystem;
 import AbstractFactory.setups.CottageClimate;
 import AbstractFactory.setups.CottageLighting;
 import AbstractFactory.setups.CottageSecurity;
 
 public class CottageFactory extends SmartHomeFactory {
-    public LightingSystem createLighting() { return new CottageLighting(); }
-    public SecuritySystem createSecurity() { return new CottageSecurity(); }
-    public ClimateSystem createClimate() { return new CottageClimate(); }
+    public ILightingSystem createLighting() { return new CottageLighting(); }
+    public ISecuritySystem createSecurity() { return new CottageSecurity(); }
+    public IClimateSystem createClimate() { return new CottageClimate(); }
 }
 
 

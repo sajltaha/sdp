@@ -1,6 +1,6 @@
 package AbstractFactory.interfaces;
 
-public interface ClimateSystem {
+public interface ISecuritySystem {
     void install();
     String getName();
 }

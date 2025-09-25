@@ -1,13 +1,13 @@
 package AbstractFactory;
 
-import AbstractFactory.interfaces.ClimateSystem;
-import AbstractFactory.interfaces.LightingSystem;
-import AbstractFactory.interfaces.SecuritySystem;
+import AbstractFactory.interfaces.IClimateSystem;
+import AbstractFactory.interfaces.ILightingSystem;
+import AbstractFactory.interfaces.ISecuritySystem;
 
 public abstract class SmartHomeFactory {
-    public abstract LightingSystem createLighting();
-    public abstract SecuritySystem createSecurity();
-    public abstract ClimateSystem createClimate();
+    public abstract ILightingSystem createLighting();
+    public abstract ISecuritySystem createSecurity();
+    public abstract IClimateSystem createClimate();
 }
 
 

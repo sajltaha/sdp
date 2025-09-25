@@ -1,6 +1,6 @@
 package AbstractFactory.interfaces;
 
-public interface SecuritySystem {
+public interface ILightingSystem {
     void install();
     String getName();
 }

@@ -1,12 +1,12 @@
 package FactoryMethod;
 
-import FactoryMethod.interfaces.Exporter;
+import FactoryMethod.interfaces.IExporter;
 
 public class ExportService {
     public void export(String type, String data) {
         System.out.println("\n=== Exporting Report ===");
         System.out.println("Type: " + type);
-        Exporter exporter = ExporterFactory.create(type);
+        IExporter exporter = ExporterFactory.create(type);
         if (exporter == null) {
             System.out.println("Unknown export type");
             return;

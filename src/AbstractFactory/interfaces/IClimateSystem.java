@@ -1,6 +1,6 @@
 package AbstractFactory.interfaces;
 
-public interface LightingSystem {
+public interface IClimateSystem {
     void install();
     String getName();
 }

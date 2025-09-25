@@ -1,8 +1,8 @@
 package AbstractFactory;
 
-import AbstractFactory.interfaces.ClimateSystem;
-import AbstractFactory.interfaces.LightingSystem;
-import AbstractFactory.interfaces.SecuritySystem;
+import AbstractFactory.interfaces.IClimateSystem;
+import AbstractFactory.interfaces.ILightingSystem;
+import AbstractFactory.interfaces.ISecuritySystem;
 
 public class SmartHomeInstaller {
     private final SmartHomeFactory factory;
@@ -14,9 +14,9 @@ public class SmartHomeInstaller {
     public void installAll() {
         System.out.println("=== Installing smart home setup ===");
 
-        LightingSystem lighting = factory.createLighting();
-        SecuritySystem security = factory.createSecurity();
-        ClimateSystem climate = factory.createClimate();
+        ILightingSystem lighting = factory.createLighting();
+        ISecuritySystem security = factory.createSecurity();
+        IClimateSystem climate = factory.createClimate();
 
         System.out.println("\nLighting:");
         System.out.println("→ " + lighting.getName());

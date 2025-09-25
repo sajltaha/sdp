@@ -1,6 +1,6 @@
 package FactoryMethod.interfaces;
 
-public interface Exporter {
+public interface IExporter {
     void export(String data);
     String getName();
 }
