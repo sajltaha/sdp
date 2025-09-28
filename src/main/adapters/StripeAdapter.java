@@ -4,7 +4,7 @@ import main.gateways.StripeGateway;
 import main.interfaces.IPaymentProcessor;
 
 public class StripeAdapter implements IPaymentProcessor {
-    private StripeGateway stripeGateway;
+    private final StripeGateway stripeGateway;
 
     public StripeAdapter(StripeGateway stripeGateway) {
         this.stripeGateway = stripeGateway;

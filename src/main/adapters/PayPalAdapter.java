@@ -4,7 +4,7 @@ import main.gateways.PayPalGateway;
 import main.interfaces.IPaymentProcessor;
 
 public class PayPalAdapter implements IPaymentProcessor {
-    private PayPalGateway payPalGateway;
+    private final PayPalGateway payPalGateway;
 
     public PayPalAdapter(PayPalGateway payPalGateway) {
         this.payPalGateway = payPalGateway;
