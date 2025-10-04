@@ -4,17 +4,17 @@ import main.abstraction.Vehicle;
 import main.implementor.IWorkshop;
 import java.util.List;
 
-public class Car extends Vehicle {
-    public Car(List<IWorkshop> workshops) {
+public class Truck extends Vehicle {
+    public Truck(List<IWorkshop> workshops) {
         super(workshops);
     }
 
     @Override
     public void manufacture() {
-        System.out.println("--- Manufacturing a new Car ---");
+        System.out.println("--- Manufacturing a new Truck ---");
         for (IWorkshop workshop : workshops) {
             workshop.work();
         }
-        System.out.println("--- Car is ready! ---\n");
+        System.out.println("--- Truck is ready! ---\n");
     }
 }

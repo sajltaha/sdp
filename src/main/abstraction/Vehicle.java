@@ -1,14 +1,13 @@
 package main.abstraction;
 
 import main.implementor.IWorkshop;
+import java.util.List;
 
 public abstract class Vehicle {
-    protected IWorkshop workShop1;
-    protected IWorkshop workShop2;
+    protected List<IWorkshop> workshops;
 
-    protected Vehicle(IWorkshop workShop1, IWorkshop workShop2) {
-        this.workShop1 = workShop1;
-        this.workShop2 = workShop2;
+    public Vehicle(List<IWorkshop> workshops) {
+        this.workshops = workshops;
     }
 
     public abstract void manufacture();

@@ -5,6 +5,6 @@ import main.implementor.IWorkshop;
 public class Assemble implements IWorkshop {
     @Override
     public void work() {
-        System.out.print(" and Assembled.");
+        System.out.println("   -> Assembling the parts... Done.");
     }
 }

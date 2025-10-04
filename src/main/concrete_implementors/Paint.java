@@ -2,9 +2,9 @@ package main.concrete_implementors;
 
 import main.implementor.IWorkshop;
 
-public class Produce implements IWorkshop {
+public class Paint implements IWorkshop {
     @Override
     public void work() {
-        System.out.println("   -> Producing parts... Done.");
+        System.out.println("   -> Painting the vehicle... Done.");
     }
 }
