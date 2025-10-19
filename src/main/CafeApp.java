@@ -9,7 +9,7 @@ import main.interfaces.IBeverage;
 
 public class CafeApp {
     public static void main(String[] args) {
-        CafeFacade cafe = new CafeFacade("John Doe");
+        CafeFacade cafe = new CafeFacade("Talgat Sailaubekov");
 
         // Order 1: A simple coffee
         IBeverage bev1 = new Coffee("Espresso");
