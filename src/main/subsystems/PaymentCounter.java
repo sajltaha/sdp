@@ -1,7 +1,6 @@
 package main.subsystems;
 
-//Part of Facade Pattern
-// One of the complex cafe subsystems
+// Part of Facade Pattern
 
 public class PaymentCounter {
     public void processPayment(double amount) {

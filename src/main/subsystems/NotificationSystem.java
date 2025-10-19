@@ -1,7 +1,6 @@
 package main.subsystems;
 
-//Part of Facade Pattern
-// One of the complex cafe subsystems
+// Part of Facade Pattern
 
 public class NotificationSystem {
     public void sendReceipt(String customerName, String beverageDesc) {

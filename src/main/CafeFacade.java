@@ -5,8 +5,7 @@ import main.subsystems.Menu;
 import main.subsystems.NotificationSystem;
 import main.subsystems.PaymentCounter;
 
-//Part of Facade Pattern
-// Cafe facade
+// Part of Facade Pattern
 
 public class CafeFacade {
     private final Menu menu;

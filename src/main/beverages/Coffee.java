@@ -1,8 +1,7 @@
 package main.beverages;
 import main.interfaces.IBeverage;
 
-//Part of Decorator Pattern
-// One of the simple basic beverages
+// Part of Decorator Pattern
 
 public class Coffee implements IBeverage {
     private final String name;

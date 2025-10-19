@@ -2,8 +2,7 @@ package main.concrete_decorators;
 import main.abstract_decorators.BeverageDecorator;
 import main.interfaces.IBeverage;
 
-//Part of Decorator Pattern
-// One of the concrete decorators - additional add-ons
+// Part of Decorator Pattern
 
 public class WhippedCreamDecorator extends BeverageDecorator {
     public WhippedCreamDecorator(IBeverage beverage) {

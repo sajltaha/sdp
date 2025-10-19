@@ -1,8 +1,7 @@
 package main.abstract_decorators;
 import main.interfaces.IBeverage;
 
-//Part of Decorator Pattern
-// Abstract decorator
+// Part of Decorator Pattern
 
 public abstract class BeverageDecorator implements IBeverage {
     protected IBeverage beverage;

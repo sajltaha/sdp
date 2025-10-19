@@ -1,7 +1,6 @@
 package main.subsystems;
 
-//Part of Facade Pattern
-// One of the complex cafe subsystems
+// Part of Facade Pattern
 
 public class Menu {
     public void searchBeverage(String desc) {
