@@ -8,7 +8,7 @@ public class RideSystemDemo {
         System.out.println("========================================");
         System.out.println("RIDE BOOKING SYSTEM");
         System.out.println("========================================");
-        RideRequest request = new RideRequest("REQ-2025-001", 15, 2, "Talgat Sailaubekov");
+        RideRequest request = new RideRequest(15, 2, "Talgat Sailaubekov");
         System.out.println("\nExample 1: Pool Ride");
         request.setRideStrategy(new PoolRide());
         request.processRequest();

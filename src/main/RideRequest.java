@@ -5,13 +5,11 @@ import main.interfaces.IRideStrategy;
 
 public class RideRequest {
     private IRideStrategy rideStrategy;
-    private final String requestId;
     private final int distance;
     private final int passengers;
     private final String userName;
 
-    public RideRequest(String requestId, int distance, int passengers, String userName) {
-        this.requestId = requestId;
+    public RideRequest( int distance, int passengers, String userName) {
         this.distance = distance;
         this.passengers = passengers;
         this.userName = userName;
@@ -27,7 +25,6 @@ public class RideRequest {
         System.out.println("\n========================================");
         System.out.println("RIDE REQUEST DETAILS");
         System.out.println("========================================");
-        System.out.println("Request ID: " + requestId);
         System.out.println("User: " + userName);
         System.out.println("Ride Type: " + rideStrategy.getName());
         System.out.println("----------------------------------------");
