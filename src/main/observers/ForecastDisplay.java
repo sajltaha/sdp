@@ -1,13 +1,13 @@
 package main.observers;
 
-import main.interfaces.Observer;
-import main.interfaces.Subject;
+import main.interfaces.IObserver;
+import main.interfaces.ISubject;
 
-public class ForecastDisplay implements Observer {
+public class ForecastDisplay implements IObserver {
     private float currentPressure = 29.92f;
     private float lastPressure;
 
-    public ForecastDisplay(Subject weatherData) {
+    public ForecastDisplay(ISubject weatherData) {
         weatherData.registerObserver(this);
     }
 
