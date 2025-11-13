@@ -15,7 +15,6 @@ public class Main {
         breakfast.add(new Egg());
         breakfast.add(new Egg());
 
-        // Новый заказ
         Menu special = new Menu("Special Order");
         special.add(new Pancake());
         special.add(new Egg());
@@ -24,7 +23,6 @@ public class Main {
         fullMenu.add(breakfast);
         fullMenu.add(special);
 
-        // === Используем Visitor ===
         System.out.println("=== NUTRITION ===");
         NutritionVisitor nutrition = new NutritionVisitor();
         fullMenu.accept(nutrition);

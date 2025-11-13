@@ -2,7 +2,7 @@ package main.interfaces;
 
 public interface IIngredient {
     String getName();
-    double getCalories();
-    double getPrice();
+    float getCalories();
+    float getPrice();
     void accept(IVisitor visitor);
 }

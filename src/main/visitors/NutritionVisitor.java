@@ -7,7 +7,7 @@ import main.concrete_ingredients.Syrup;
 import main.interfaces.IVisitor;
 
 public class NutritionVisitor implements IVisitor {
-    private double totalCalories = 0;
+    private float totalCalories = 0;
 
     @Override public void visitPancake(Pancake p) { totalCalories += p.getCalories(); }
     @Override public void visitSyrup(Syrup s) { totalCalories += s.getCalories(); }
@@ -16,7 +16,7 @@ public class NutritionVisitor implements IVisitor {
         System.out.println("Calculating calories for: " + m.getName());
     }
 
-    public double getTotalCalories() {
+    public float getTotalCalories() {
         return totalCalories;
     }
 }

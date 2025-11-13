@@ -19,8 +19,8 @@ public class Menu implements IIngredient {
     }
 
     @Override public String getName() { return name; }
-    @Override public double getCalories() { return 0; } // не используется
-    @Override public double getPrice() { return 0; }
+    @Override public float getCalories() { return 0; }
+    @Override public float getPrice() { return 0; }
 
     @Override
     public void accept(IVisitor visitor) {
@@ -28,9 +28,5 @@ public class Menu implements IIngredient {
         for (IIngredient item : items) {
             item.accept(visitor);
         }
-    }
-
-    public List<IIngredient> getItems() {
-        return items;
     }
 }

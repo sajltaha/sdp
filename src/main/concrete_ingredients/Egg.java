@@ -5,8 +5,8 @@ import main.interfaces.IVisitor;
 
 public class Egg implements IIngredient {
     @Override public String getName() { return "Egg"; }
-    @Override public double getCalories() { return 70; }
-    @Override public double getPrice() { return 0.8; }
+    @Override public float getCalories() { return 70; }
+    @Override public float getPrice() { return 0.8F; }
 
     @Override
     public void accept(IVisitor visitor) {
